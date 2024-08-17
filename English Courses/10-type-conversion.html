@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Number
+        let x="50";
+        let y=30;
+        console.log(x+y,typeof(x+y));
+        let total=Number(x)+y;
+        console.log(total, typeof total);
+
+        let a="abc22";
+        console.log(Number(a));
+        
+        let o=true;
+        console.log(o+2);
+        console.log(Number(o));
+        
+
+
+        //String
+        let t=50;
+        console.log(t+300);
+        console.log(String(t)+50);
+
+        console.log(String(o),typeof String(o));
+
+
+        //Boolean
+        console.log(Boolean(t));
+        console.log(Boolean(t)-Boolean(t));
+
+        console.log(Boolean("asf")); //true
+        console.log(Boolean(-8)); //true
+        console.log(Boolean(0));//false
+        console.log(Boolean(null));//false
+        console.log(Boolean(undefined));//false
+        console.log(Boolean(""));//false
+        console.log(Boolean("false"));//true
+        
+
+
+    </script>
+</body>
+</html>
