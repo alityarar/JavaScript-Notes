@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprasion operator</title>
+</head>
+<body>
+
+    <script>
+        let a=5;
+        let b=5;
+        let c=6;
+        let x="5";
+        if(a!=b){ 
+            console.log("esit degil");
+        }if (a==c) {
+            console.log("yazmamali");
+        } else {
+            console.log("yazmali");
+        }
+
+        if(a>=b){
+            console.log("bu da yazmali");
+        }
+
+        console.log(a==x); //true cunku bu biraz .equal gibi, sadece degere bakar
+        console.log(a===x); //false cunku bu javadaki == gibi. tur ve yer de onemlidir
+
+        console.log(true ===1); //false boolean not equal to number
+        console.log(true==1); //true boolean equal to number
+    </script>
+    
+</body>
+</html>
