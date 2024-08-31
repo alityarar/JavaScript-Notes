@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+
+    <script>
+        // Arabaları temsil eden veri yapısı
+        const arabalar = [
+            { marka: "Marka1", model: "Model1", tur: "sedan", yolcu: 4, modelYili: 2020, fiyat: 20000 },
+            { marka: "Marka1", model: "Model2", tur: "suv", yolcu: 7, modelYili: 2019, fiyat: 30000 },
+            { marka: "Marka2", model: "Model1", tur: "van", yolcu: 8, modelYili: 2018, fiyat: 25000 },
+            { marka: "Marka2", model: "Model2", tur: "truck", yolcu: 2, modelYili: 2021, fiyat: 40000 },
+            { marka: "Marka3", model: "Model1", tur: "suv", yolcu: 5, modelYili: 2020, fiyat: 35000 },
+            { marka: "Marka3", model: "Model2", tur: "sedan", yolcu: 4, modelYili: 2017, fiyat: 18000 },
+            { marka: "Marka4", model: "Model1", tur: "truck", yolcu: 3, modelYili: 2019, fiyat: 37000 },
+            { marka: "Marka4", model: "Model2", tur: "van", yolcu: 6, modelYili: 2022, fiyat: 45000 }
+        ];
+
+        // Arama fonksiyonu
+        function aramaYap() {
+            // Kullanıcıdan alınan değerler
+            const tur = "truck";
+            const yolcu = 5;
+            const modelYili = 2018;
+            const fiyat = 28000;
+
+            // Filtreleme işlemi
+            const uygunArabalar = arabalar.filter(araba => 
+                araba.tur === tur &&
+                araba.yolcu >= yolcu &&
+                araba.modelYili >= modelYili &&
+                araba.fiyat <= fiyat
+            );
+
+            // Sonuç gösterme
+            if (uygunArabalar.length > 0) {
+                uygunArabalar.forEach(araba => {
+                    console.log(`Marka: ${araba.marka}, Model: ${araba.model}, Tür: ${araba.tur}, Yolcu Kapasitesi: ${araba.yolcu}, Model Yılı: ${araba.modelYili}, Fiyat: ${araba.fiyat}`);
+                });
+            } else {
+                console.log("Belirtilen kriterlere uygun araç bulunamadı");
+            }
+        }
+
+        // Arama fonksiyonunu çalıştır
+        aramaYap();
+    </script>
+
+</body>
+</html>
