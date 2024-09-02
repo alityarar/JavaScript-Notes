@@ -29,6 +29,23 @@
         console.log(checkNumber);
 
 
+        //short circuit
+
+        let username=66;
+        let defaultUsername="Guest";
+        username=username||defaultUsername;
+        console.log("Hello "+username);
+        username=username&&defaultUsername;
+        console.log(username);
+
+        let isLoggedIn=false;
+        let username1="";
+        username1=isLoggedIn&&("John");
+        console.log("Hello "+(username1||"Guest"));
+
+        
+
+
 
 
     </script>
