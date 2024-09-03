@@ -43,7 +43,27 @@
         username1=isLoggedIn&&("John");
         console.log("Hello "+(username1||"Guest"));
 
+
+        let name=prompt("Enter user name");
         
+        //using if
+       /* if(name==""){
+            name="guest"
+        }*/
+
+        name=name||"guest";
+
+        let message=`Welcome, ${name}`;
+        console.log(message);
+
+
+
+        let q=true;
+        let w=false;
+        let e="Hello";
+        let result1=a&&false;
+        console.log(result1);
+
 
 
 
