@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Practice</title>
+</head>
+<body>
+    
+    <script>
+        let name="";
+        let defaultName="Guest"
+        let print=name||defaultName;
+        console.log(print);
+
+        let age=45;
+        let defaultAge=99;
+        let print1=age||defaultAge;
+        console.log(print1);
+
+
+        //Nullish coalescing
+
+        let username;
+        let defaultUsername="Guest";
+        let result=username??defaultUsername;
+        console.log("Hello "+result);
+
+        // EGER VARIABLE NULL VEYA UNDEFINED ISE ALTERNATIF OLANI SECMEMIZE OLANAK VERIR
+
+        let height;
+        let weight=10;
+        let defaultSize=0;
+        console.log((height??defaultSize)*(weight??defaultSize)/2);
+
+
+         
+    </script>
+</body>
+</html>
