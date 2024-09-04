@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+
+    <script>
+
+        const myInteger=20;
+        const myFloat=20.0;
+        const myString="20";
+
+        console.log(myInteger==myFloat); //true
+        console.log(myInteger==myString); //true
+        console.log(myFloat==myString); //true
+        console.log(myInteger===myFloat); //true
+        console.log(myInteger===myString); //false
+        console.log(myFloat===myString); //false
+
+
+
+        console.log(Number(myString)===myInteger);
+        console.log(Number(myString)===myFloat);
+
+        //String e cevirmek icin .toString() kullanilir*************************
+        const x=myInteger.toString();
+        console.log(x+10, typeof x);
+        
+
+        //kusurat atmak icin .toFixed() kullanilir. Method icine yazdigin sayi noktadan sonraki rakam sayisini belirler*********
+        const x2=myInteger/3;
+        console.log(x2); //6.666666666666667
+        console.log(x2.toFixed(2)); //6.67
+        console.log(x2.toFixed(3)); //6.667
+
+        //toplam basamak sayisini ayarlamak icin toPercision() kullaniriz. Method icine yazdigimiz sayi basamak sayisini belirler**********
+        console.log(x2); //6.666666666666667
+        console.log(x2.toPrecision(1)); //7
+        console.log(x2.toPrecision(2)); //6.7
+        console.log(x2.toPrecision(3)); //6.67
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
