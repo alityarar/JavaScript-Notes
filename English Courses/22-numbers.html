@@ -41,7 +41,81 @@
         console.log(x2.toPrecision(1)); //7
         console.log(x2.toPrecision(2)); //6.7
         console.log(x2.toPrecision(3)); //6.67
+        // console.log(x2.toPrecision(0));        (0) yazildiginda hata verir
 
+
+        const var1=4;
+        const var2="123.32"
+
+        //Integer olarak almak icin parseInt() kullaniriz
+        console.log(parseInt(var1)); //4
+        console.log(parseInt(var2)); //123
+
+        //Float olarak almak icin parseFloat() kullaniriz
+        console.log(parseFloat(var1)); //4
+        console.log(parseFloat(var2)); //123.32
+
+        //Integer olup olmadigini boolean ile almak icin Number.isInteger() kullanilir
+        console.log(Number.isInteger(var1));
+        console.log(Number.isInteger(var2));
+
+        console.log(Number.MIN_VALUE);
+
+        //Math Object
+        console.log(Math.PI);  //3.141592653589793
+
+        //En yakin tam sayiya yuvarlama
+        console.log(Math.round(3.14));  //3
+        console.log(Math.round(3.5)); //4
+
+        //Bir ust sayiya yuvarlama
+        console.log(Math.ceil(3.23)); //4
+        console.log(Math.ceil(3.9)); //4
+
+        //Bir alt sayiya yuvarlama
+        console.log(Math.round(3.23)); //3
+        console.log(Math.round(3.9)); //4
+
+
+        //Tam olarak bir alt sayiya yuvarlama (Kusurat yuksek olsa bile)
+        console.log(Math.floor(3.93)); //3
+
+
+        //Sadece integer olarak verme
+        console.log(Math.trunc(315.546)); //315
+
+        //Sayinin negatif-null-positive oldugunu verir (neg)
+        console.log(Math.sign(324.4564)); //1
+        console.log(Math.sign(-123.35)); //-1
+        console.log(Math.sign(0)); //0
+        console.log(Math.sign()); //NaN
+
+
+        //kare gibi uzeri anlamina gelen sey. 3 uzeri 2 gibi
+        console.log(Math.pow(3,2));
+
+        //kare kokunu bulma
+        console.log(Math.sqrt(4));
+
+        //Yazilan integerin positive degerini verir
+        console.log(Math.abs(-50.6));
+
+        //verilen degerler arasinda en kucuk olani verir
+        console.log(Math.min(4,6,8));
+
+        //verilen degerler arasinda en buyuk olani verir
+        console.log(Math.max(4,8,9));
+
+        // 0 ve 1 arasinda random numara verir. 0 ve 1 dahil
+        console.log(Math.random());
+
+        //iki sayi arasinda random numara alma (Yazilan sayilar dahil)
+        const randomNumara=Math.floor(Math.random()*(100-10+1)+10);
+        console.log(randomNumara);
+
+        //(max-min+1)+min formul
+        let r=Math.floor(Math.random()*(99-9+1)+9);
+        console.log(r);
 
 
 
