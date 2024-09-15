@@ -64,6 +64,27 @@
         console.log(str6.trimEnd());//       Learning JS is easy
 
 
+        //split() belirli seylere gore bolmeye yarar. nokta,bosluk veya bosluk gibi
+
+        const virgullu="hey, you, me, march, sea, leon"
+        const boslukli="hey you me march sea leon"
+        console.log(virgullu.split(","));
+        console.log(boslukli.split(" "));
+
+        //padStart/End()   once kac karakter olmasini istedigimizi yazariz,sonra da bos yerin ne ile tamamlanmasi
+        //gerektigini belirtiriz
+
+        console.log(boslukli.padStart(30,"h")); //hhhhhhey you me march sea leon
+        console.log(boslukli.padEnd(30,"h")); //hey you me march sea leonhhhhh
+        console.log(boslukli.padEnd(30,"*")); //hey you me march sea leon*****
+        
+
+        let num=11;
+        let numo=num.toString();
+        console.log(typeof numo);
+        console.log(numo.padEnd(4,"0")); //1100
+        console.log(String(num).padEnd(4,"0")); //1100
+
 
 
 
