@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+
+        //1. Way
+        const countries=["France","Turkey","China"];
+
+        //2. Way
+        const countries2=new Array("USA","Germany","Canada");
+
+        const countries3=[];
+        countries3[0]="Mexica";
+        countries3[1]="Kuba";
+
+        const countries4=[2];
+        countries4[0]="gggg";
+        countries4[1]="ddd";
+
+        //value alinir
+        const value1="isim";
+        //ikinci value alinir
+        const value2=18;
+
+        const deneme44=[value1,value2];
+        //const deneme44=new Array(value1,value2);
+        deneme44[0]=value2;
+        deneme44[1]=value1;
+
+
+        const ogrenci1isim="ali";
+        const ogrenci1yas=14;
+        const ogrenci2isim="mehmet";
+        const ogrenci2yas=10;
+
+        const ogrenci1=[ogrenci1isim,ogrenci1yas];
+        console.log(ogrenci1);
+        const ogrenci2=[ogrenci2isim,ogrenci2yas];
+        console.log(ogrenci2);
+
+        const ogrenciYaslar=[ogrenci1[1],ogrenci2[1]];
+        console.log(ogrenciYaslar);
+        ogrenciYaslar.sort();
+        console.log(ogrenciYaslar);
+        
+
+
+        const sinirli=new Array(2);
+        sinirli[0]="ss";
+
+        const sonAlma=["sdfdsf","dsfdsfsdfds",4444,4435,34534,34534534,34534534,534453,345345,99];
+        
+        console.log(sonAlma);
+        console.log(sonAlma[0]);
+        console.log(sonAlma[sonAlma.length-1]);
+
+       
+        
+        
+        console.log(sinirli);
+        
+        
+        
+        
+        
+        console.log(countries4);
+        console.log(countries);
+        console.log(countries2);
+        console.log(countries3);
+        console.log(deneme44);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
