@@ -25,7 +25,43 @@
         const lastLetter=text1.at(-1);
         console.log(lastLetter);
 
+        const lastLetter2=text1.charAt(text1.length-1);
+        console.log(lastLetter2);
+
         console.log(text1.at(0));
+
+        //Slice  (Iki value arasindakileri getirir)
+
+        console.log(text1.slice(0,5));
+
+        const denemelik="are you okay";
+        console.log((denemelik.slice(4,8)+
+        denemelik.slice(0,4)+
+        denemelik.slice(8,denemelik.length)));
+
+
+        //substring also similar but only positive values
+        console.log("Hello world".substring(1,5)); //ello
+
+        //substr
+        console.log("Hello world".substr(1,5)); //ello
+
+        //toUpperCase/toLowerCase
+
+        console.log(text1.toUpperCase());
+        console.log(text1.toLowerCase());
+
+        //concat (+ gibi is gorur. iki seyi birlestirir)
+        console.log(text1.concat(' test')); //it's wonderful test
+        console.log(text1.concat(text1)); //it's wonderfulit's wonderful
+
+        //trim()     Basta ve sondaki gereksiz bosluklari keser
+
+        let str6="      Learning JS is easy     ";
+        console.log(str6); //      Learning JS is easy     
+        console.log(str6.trim());// Learning JS is easy
+        console.log(str6.trimStart()); //Learning JS is easy    
+        console.log(str6.trimEnd());//       Learning JS is easy
 
 
 
