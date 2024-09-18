@@ -9,7 +9,7 @@
     <script>
 
         const fruits=["apple","melon","banana"];
-        console.log(fruits);
+        console.log(fruits); //['apple', 'melon', 'banana']
 
         //push() sona element eklemede kullanilir
         const newLength=fruits.push("cherry");
@@ -23,9 +23,48 @@
         console.log(popped); //cikarilan elementi verir *cherry*
         console.log(fruits); //kalan elementleri verir
 
+        //unshift() basa element eklemede kullanilir
+
+        const unshifted=fruits.unshift("lemon");
+        console.log(unshifted); //4
+        console.log(fruits); //['lemon', 'apple', 'melon', 'banana']
+
+        //shift() bastan element cikarmada kullanilir
+
+        const shiftedd=fruits.shift();
+        console.log(shiftedd); //lemon
+        console.log(fruits); //['apple', 'melon', 'banana']
 
 
 
+        const numeros=[1,8,5,4,8,9,4,2];
+
+        //sort() kucukten buyuge dogru veya alfabetik olarak siralar
+
+        console.log(numeros); //(8) [1, 8, 5, 4, 8, 9, 4, 2]
+        console.log(numeros.sort()); //[1, 2, 4, 4, 5, 8, 8, 9]
+
+        //reverse() buyukten kucuge dogru veya ters alfabetik olarak siralar
+
+        console.log(numeros); //(8) [1, 2, 4, 4, 5, 8, 8, 9]
+        console.log(numeros.reverse()); //(8) [9, 8, 8, 5, 4, 4, 2, 1]
+
+
+
+        //splice()  3 value'ye sahiptir. 1.value hangi indexten itibaren olacagi, 2.value kac elementi etkileyecegi
+        //                     ve 3.value ne il degistirilecegini belirtir. Duzenleme ve degistirme icin kullanilir
+
+        console.log(fruits); //['apple', 'melon', 'banana']
+        const spliced=fruits.splice(1,1,"bt")
+        console.log(spliced); //['melon']
+        console.log(fruits); //['apple', 'bt', 'banana']
+
+
+
+        //**********ACCESS METHODS*******************************
+
+        /*Access Methods Array'i degistirmeden sadece uzerinde calismamizi ve data almamizi saglar*/
+        console.log(numeros.concat(99));
 
 
 
