@@ -64,7 +64,34 @@
         //**********ACCESS METHODS*******************************
 
         /*Access Methods Array'i degistirmeden sadece uzerinde calismamizi ve data almamizi saglar*/
-        console.log(numeros.concat(99));
+
+
+        //concat()   array'in sonuna yeni value eklememizi saglar
+
+        console.log(numeros.concat(99,98));//(10) [9, 8, 8, 5, 4, 4, 2, 1, 99, 98]
+
+
+
+        //slice() iki index arasindaki value'leri getirir
+
+        const sliced=numeros.slice(0,2); //0 ile 2 arasindaki valueler   [9,8]
+        console.log(sliced);
+
+        //indexOf()  yazilan value'nin indexini getirir
+        
+        const indexli=numeros.indexOf(9); //0
+        const indexli2=numeros.indexOf(8);//1
+        console.log(indexli);
+        console.log(indexli2);
+
+
+
+
+
+
+
+
+
 
 
 
