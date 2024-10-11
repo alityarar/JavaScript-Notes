@@ -92,6 +92,22 @@
         console.log(Array.isArray(fruits));
         console.log(Array.isArray(lastIndexOfv));
 
+        //join()  her value nin arasina bir sey eklemek istersek kullaniriz
+        const joined=fruits.join("-");
+        console.log(joined);
+
+        //toString()  String olarak almak icin kullaniriz
+        const toStr=fruits.toString();
+        console.log(toStr);
+
+
+        //includes()  eger arrayin istedigimiz value ye sahip oldugunu ogrenmek
+        //istersek kullaniriz
+
+        const inc1=fruits.includes("23");
+        const inc2=fruits.includes("apple");
+        console.log(inc1,inc2); //false true
+
 
 
 
