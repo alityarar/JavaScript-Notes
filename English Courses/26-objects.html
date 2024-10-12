@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <script>
+        //Obje olusturma
+
+        const car1={
+            name:"car1",
+            brand:"Toyota",
+            model:"Corolla",
+            color:"Red",
+            door:4,
+
+        };
+        const car2={
+            name:"car2",
+            brand:"Toyota2",
+            model:"Corolla2",
+            color:"Red2",
+            door:42,
+
+        };
+        const car3={
+            name:"car3",
+            brand:"Toyota3",
+            model:"Corolla3",
+            color:"Red3",
+            door:43,
+
+        };
+
+        console.log("Car Brand : ", car1.brand); //Car Brand :  Toyota
+        const cars=[car1,car2,car3];
+        console.log(cars[1].model); //Corolla2
+
+        const car33="Denemeydi";
+        cars.push(car33);
+
+        const car4={
+            name:"car4",
+            brand:"Toyota4",
+            model:"Corolla4",
+            color:"Red4",
+            door:44,
+
+        };
+        const car5={
+            name:"car5",
+            brand:"Toyota5",
+            model:"Corolla5",
+            color:"Red5",
+            door:45,
+
+        };
+
+        cars.push(car4,car5)
+        console.log(cars);
+
+       //cars array i icinde door u 45 olanlari filtreleme
+       const istedigimdoorcar=cars.filter(car=> car.door===45);
+       console.log(istedigimdoorcar);
+
+       const red4Cars=cars.filter(car=> car.color==="Red4");
+       const cikti=red4Cars;
+       red4Cars.forEach(car => console.log("Car Name: " + car.name + ", Brand: " + car.brand + ", Color: " + car.color));
+
+
+    </script>
+    
+</body>
+</html>
