@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects2</title>
+</head>
+<body>
+
+    <script>
+        const car1={
+             make:"Toyota",
+             model:"Camry",
+             year: 2021,
+             color: ["Red","Blue","White"],
+             engine:{
+                type:"V6",
+                horsepower:350
+             }
+        }
+
+        console.log(car1);
+        console.log(car1.color[0]);
+        console.log(car1.engine);
+        console.log("Horse Power : "+car1.engine.horsepower);
+        console.log(car1.make);
+        console.log(car1.year);
+        car1.year=2022;
+        console.log(car1.year);
+        car1.isManual=false;
+        car1.transmission="Auto";
+        console.log(car1);
+        car1.color.push("Black");
+        console.log(car1);
+    </script>
+    
+</body>
+</html>
