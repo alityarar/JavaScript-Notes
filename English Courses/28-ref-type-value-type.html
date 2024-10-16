@@ -19,6 +19,24 @@
         
         let uppName=name1.toUpperCase();
         console.log(name1,uppName);
+
+        let student1={
+            name:"Bold",
+            age:20
+        }
+        console.log(student1);
+        let student2=student1;
+        console.log(student2);
+        student2.name="Alice";
+        console.log(student1); //student1 ile ayni objeyi paylastiklari icin ikisi de degisir
+
+        const abc={
+            a:1,b:2
+        };
+        const xyz={
+            a:1,b:2
+        };
+        console.log(abc===xyz); //false
     </script>
 </body>
 </html>
