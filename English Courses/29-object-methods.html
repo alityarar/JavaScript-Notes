@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods</title>
+</head>
+<body>
+    
+    <script>
+
+        //Create() Method
+        //Ayni obje 2 value icin kullanildiginda, ikisi birden degisir
+        //Ancak Create() kullanildiginda ayni obje ozellikleri kullanilarak yeni obje yapilir
+
+        const person={
+            name:"John",
+            lastName:"Doe",
+
+        }
+        console.log(person);
+        const person2=person;
+        const person3=Object.create(person);
+        console.log(person2);
+        console.log(person3);
+        console.log(person3.lastName);
+        person2.lastName="person2";
+        person3.lastName="person3";
+        console.log(person);
+        console.log(person2);
+        console.log(person3);
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
