@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Object.assign()
+        //iki objeyi birbirine birlestirmede kullanilir ve assign eder
+
+        const target={a:1, b:2};
+        const source={b:4, c:5};
+
+        //assign methods returns merged object
+        const result=Object.assign(target,source);
+        console.log(target); //{a: 1, b: 4, c: 5}
+        console.log(result===target); //true
+
+
+
+        const car1={
+            name:"Bmw",
+            color:"Black",
+            price:8000000,
+            isAvailable:true,
+            color:"Red"
+        };
+        console.log(car1);
+
+        const car2={
+            name:"Audi",
+            color:"White",
+            price:599999,
+            isAvailable:true,
+            door:5,
+            year:2000
+        };
+
+        const car3=Object.assign(car2,car1);
+        console.log(car3);
+
+    </script>
+</body>
+</html>
