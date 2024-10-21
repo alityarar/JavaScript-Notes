@@ -41,6 +41,17 @@
         const car3=Object.assign(car2,car1);
         console.log(car3);
 
+
+        //Shallow Copying  (Create methoduna benzer.)
+        //Bos objeye diger objeyi assing ederek diger objenin kopyasini cikaririz
+        const car4=Object.assign({},car2);
+
+
+        car2.name="Mercedes";
+        console.log(car2);
+        console.log(car4);
+
+
     </script>
 </body>
 </html>
