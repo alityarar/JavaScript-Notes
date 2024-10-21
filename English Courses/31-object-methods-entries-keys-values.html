@@ -6,6 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        const car1={
+            name:"Bmw",
+            color:"Black",
+            price:8000000,
+            isAvailable:true,
+            color:"Red"
+        };
+        console.log(car1);
+
+
+        //entries() butun girdileri gormek icin kullanilir
+        console.log(Object.entries(car1));
+
+        //sadece key leri gormek icin kullanilir
+        console.log(Object.keys(car1));
+
+        //sadece value leri gormek icin kullanilir
+        console.log(Object.values(car1));
+
+
+//******************************************************************
+        //Object.seal()  objedeki degerleri degistirmemize
+        //olanak verir ancak yeni bir value ekleyip silmeyi engeller
+        
+        const car2={
+            name:"Bmw",
+            color:"Black",
+            price:8000000,
+            isAvailable:true,
+            color:"Red"
+        };
+        Object.seal(car2);
+        car2.name="Audi"; //allowed
+        car2.year=2020; //not allowede
+        console.log(car2);
+
+
+
+        //Object.freeze() Objeyi tamamen degistirilemez yapar
+        
+
+    </script>
 </body>
 </html>
