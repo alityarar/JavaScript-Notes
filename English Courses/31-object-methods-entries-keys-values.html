@@ -17,7 +17,7 @@
         console.log(car1);
 
 
-        //entries() butun girdileri gormek icin kullanilir
+        //entries() butun girdileri gormek icin kullanilir. Array olarak verir
         console.log(Object.entries(car1));
 
         //sadece key leri gormek icin kullanilir
@@ -46,7 +46,12 @@
 
 
         //Object.freeze() Objeyi tamamen degistirilemez yapar
-        
+
+        Object.freeze(car1);
+        car1.name="Nissan";//not allowed
+        car1.color="Purple";//not allowed
+        delete car1.color; //not allowed
+        console.log(car1);
 
     </script>
 </body>
