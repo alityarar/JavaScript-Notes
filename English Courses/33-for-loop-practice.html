@@ -32,6 +32,31 @@
 
 
         //convert strings to uppercase
+        let colours=["blue","yellow","red","black"];
+        let colours2=[];
+        for(let i=0 ; i<colours.length; i++){
+            
+            colours2[i]=colours[i].toUpperCase();            
+            
+        };
+        console.log(colours2);
+        
+
+        //print length of each colors
+        for(let i=0; i<colours.length;i++){
+           
+            console.log(colours[i]+" kelimesinin harf sayisi : "+colours[i].length);
+
+        }
+
+
+        //print numbers which are divisble by 3 and 5 in range of 1 to 100
+        for(i=1; i<=100; i++){
+           
+            if(i%3==0 && i%5==0){
+                console.log(i);
+            }
+        }
     </script>
     
 </body>
