@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        let girdi=prompt("sifre girin");
+        /*let girdi=prompt("sifre girin");
         let i=0;
         while(i<=5){
             console.log(i+" Hello World");
@@ -17,9 +17,27 @@
         while(girdi==4){
             alert("sifre dogrulandi");
             break;
+        }*/
+
+
+        //sample array of colors
+        let colors=['red','green','blue','black'];
+        i=0;
+        while(i<colors.length){
+            
+            console.log(colors[i].toUpperCase());
+            i++;
+            
         }
 
 
+        //password icin do-while daha iyi olabilir
+
+        let pass;
+        do{
+            pass=prompt("enter a password with minimum 8 char");
+        }while(pass.length<8);
+        console.log("valide password : " , pass); //boylece istenilen sey giriline kadar devam eder
         
     </script>
     
