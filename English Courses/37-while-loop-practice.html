@@ -27,6 +27,50 @@
 
         };
         console.log(extra);
+
+
+
+
+        //Question 2: Calculate the sum of numbers from 1 to n
+        //(Where n is a user input) using a while loop
+
+        let input= parseInt(prompt("Enter a number"));
+        let end=0;
+        let temp=0;
+        while(input>=end){
+            temp+=input;
+            input--;
+        };
+        console.log(temp);
+
+        //Question 3 Create a new array containing only the even numbers
+        //from an existing array using a while loop
+
+        let existingArray=[4,6,3,6,7,8,4,2,1,5,53,24,79,63,12,56,9,78,42,12,35,78,7,65,23,34];
+        let newArr=[];
+        let newArr2=[];
+        let start=0;
+        while(start<existingArray.length){
+            
+            let gecici=existingArray[start]; 
+            if(gecici%2!=0){
+                newArr.push(gecici);
+            }
+            start++;
+        };
+        console.log(newArr);
+        start=0;
+
+        //Question 4 reverse a string using a while loop
+        let newStart=existingArray.length-1;
+
+        while(newStart>=0){
+            newArr2.push(existingArray[newStart]);
+            newStart--;
+        };
+
+        
+        console.log(newArr2);
     </script>
 </body>
 </html>
