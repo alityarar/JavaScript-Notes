@@ -68,9 +68,20 @@
             newArr2.push(existingArray[newStart]);
             newStart--;
         };
+        console.log(newArr2);
+
+
+        let str="Hello";
+        let baslangic=0;
+        let newWord="";
+        while(baslangic<=str.length){
+            let tempo=str.charAt(str.length-(baslangic));
+            newWord+=tempo;
+            baslangic++;
+        };
 
         
-        console.log(newArr2);
+        console.log(newWord);
     </script>
 </body>
 </html>
